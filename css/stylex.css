@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Lato";
+  padding-bottom: 200px;
+}
+
+body::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  //content: url("../stalko_v2_01_glowna_slider01.jpg");
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+/* ==== ==== FONTS ==== ==== */
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* ==== ==== BUTTONS ==== ==== */
+
+.button-primary {
+  display: inline-block;
+  color: #fff;
+  background: #ed2810;
+  padding: 20px 50px;
+}
+
+/* ==== ==== HEADER ==== ==== */
+header {
+  background: #1e2736ed;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-wrapper .header-left-section {
+  margin-right: auto;
+}
+
+/* ==== MENU ==== */
+nav.header-menu ul#menu-main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul#menu-main-menu > .menu-item > a {
+  color: #fff;
+  padding: 25px 15px;
+  display: inline-block;
+  transition: 0.2s;
+}
+ul#menu-main-menu > .current-menu-item > a,
+ul#menu-main-menu > .menu-item:hover > a {
+  background: #ed2810;
+}
+
+/* ==== MENU SOCIAL ==== */
+.header-right-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  padding: 10px 0;
+}
+
+.header-right-top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: -100%;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.header-right-top a {
+  color: #ddd;
+  transition: 0.2s;
+}
+
+.header-right-top a:hover {
+  color: #fff;
+}
+
+/* header contact */
+
+.header-contact {
+  padding-right: 15px;
+}
+.header-contact > a {
+  font-size: 22px;
+}
+.header-contact > a:first-child::before {
+  content: "Szybki kontakt: ";
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* header social */
+.header-social {
+  padding: 0 15px;
+}
+.header-social a {
+  font-size: 30px;
+  margin: 0 5px;
+}
+
+.header-social {
+  position: relative;
+}
+
+.header-social::after,
+.header-social::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.header-social::after {
+  right: 0;
+}
+.header-social::before {
+  left: 0;
+}
+
+/* header lang */
+.header-lang {
+  padding-left: 15px;
+}
+.header-lang a {
+  font-size: 18px;
+}
+
+/* ==== ==== SLIDER ==== ==== */
+
+#slider {
+  position: relative;
+}
+
+#slider .slider-box {
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  border: solid 12px rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  max-width: 35%;
+}
+
+#slider .slider-box p {
+  color: #fff;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+#slider .slider-box .slider-button {
+  display: inline-block;
+  color: #fff;
+  background: #ed2810;
+  padding: 20px 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-20%) translateY(calc(50% + 6px));
+}
+
+/* ==== ==== SECTIONS ==== ==== */
+.sections {
+  padding: 50px 0;
+}
+
+main {
+  background: url(../img/main_background.png);
+}
+
+/* ==== ABOUT SECTION ==== */
+.about-row {
+  position: relative;
+}
+
+.about-top {
+  padding: 75px;
+  width: 50%;
+  background: #fff;
+  position: relative;
+}
+
+.about-top .button-primary {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+}
+.about-bottom {
+  margin-left: auto;
+  margin-top: -34%;
+}
+
+.template {
+  height: 450px;
+}
+
+/* ==== NUMBERS SECTION ==== */
+section.numbers {
+  padding: 50px 0;
+}
+
+.numbers-text {
+  font-size: 32px;
+  text-align: center;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.numbers-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.numbers-container .number-box {
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number-box-content {
+  position: absolute;
+  margin-top: 15px;
+}
+
+/* ==== NUMBERS SECTION ==== */
+
+section.services {
+  padding: 50px 0;
+  position: relative;
+}
+
+.services-boxes-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-box {
+  width: 30%;
+  z-index: 1;
+}
+
+.services-title {
+  background: #fff;
+  padding: 25px 15px 45px 0px;
+  position: relative;
+  width: 99%;
+  transform: translateY(40px);
+}
+
+.services-title::before {
+  content: "";
+  height: 100%;
+  background: #fff;
+  width: 50px;
+  display: block;
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  top: 0;
+}
+
+/* ==== BACKGROUND SECTION ==== */
+
+section.bg-section {
+  padding: 150px 0;
+  background: url("../img/bg-section-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.bg-section-container {
+  text-align: center;
+}

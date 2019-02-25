@@ -1,0 +1,14 @@
+/* ==== ==== FONTS ==== ==== */
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* ==== ==== BUTTONS ==== ==== */
+
+.button-primary {
+  display: inline-block;
+  color: #fff;
+  background: #ed2810;
+  padding: 20px 50px;
+}

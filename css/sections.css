@@ -1,0 +1,150 @@
+/* ==== ==== SLIDER ==== ==== */
+
+#slider {
+  position: relative;
+}
+
+#slider .slider-box {
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  border: solid 12px rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  max-width: 35%;
+}
+
+#slider .slider-box p {
+  color: #fff;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+#slider .slider-box .slider-button {
+  display: inline-block;
+  color: #fff;
+  background: #ed2810;
+  padding: 20px 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-20%) translateY(calc(50% + 6px));
+}
+
+/* ==== ==== SECTIONS ==== ==== */
+.sections {
+  padding: 50px 0;
+}
+
+main {
+  background: url(../img/main_background.png);
+}
+
+/* ==== ABOUT SECTION ==== */
+.about-row {
+  position: relative;
+}
+
+.about-top {
+  padding: 75px;
+  width: 50%;
+  background: #fff;
+  position: relative;
+}
+
+.about-top .button-primary {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+}
+.about-bottom {
+  margin-left: auto;
+  margin-top: -34%;
+}
+
+.template {
+  height: 450px;
+}
+
+/* ==== NUMBERS SECTION ==== */
+section.numbers {
+  padding: 50px 0;
+}
+
+.numbers-text {
+  font-size: 32px;
+  text-align: center;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.numbers-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.numbers-container .number-box {
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number-box-content {
+  position: absolute;
+  margin-top: 15px;
+}
+
+/* ==== NUMBERS SECTION ==== */
+
+section.services {
+  padding: 50px 0;
+  position: relative;
+}
+
+.services-boxes-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-box {
+  width: 30%;
+  z-index: 1;
+}
+
+.services-title {
+  background: #fff;
+  padding: 25px 15px 45px 0px;
+  position: relative;
+  width: 99%;
+  transform: translateY(40px);
+}
+
+.services-title::before {
+  content: "";
+  height: 100%;
+  background: #fff;
+  width: 50px;
+  display: block;
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  top: 0;
+}
+
+/* ==== BACKGROUND SECTION ==== */
+
+section.bg-section {
+  padding: 150px 0;
+  background: url("../img/bg-section-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.bg-section-container {
+  text-align: center;
+}

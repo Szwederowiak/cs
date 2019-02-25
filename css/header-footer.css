@@ -1,0 +1,122 @@
+/* ==== ==== HEADER ==== ==== */
+header {
+  background: #1e2736ed;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-wrapper .header-left-section {
+  margin-right: auto;
+}
+
+/* ==== MENU ==== */
+nav.header-menu ul#menu-main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul#menu-main-menu > .menu-item > a {
+  color: #fff;
+  padding: 25px 15px;
+  display: inline-block;
+  transition: 0.2s;
+}
+ul#menu-main-menu > .current-menu-item > a,
+ul#menu-main-menu > .menu-item:hover > a {
+  background: #ed2810;
+}
+
+/* ==== MENU SOCIAL ==== */
+.header-right-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  padding: 10px 0;
+}
+
+.header-right-top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: -100%;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.header-right-top a {
+  color: #ddd;
+  transition: 0.2s;
+}
+
+.header-right-top a:hover {
+  color: #fff;
+}
+
+/* header contact */
+
+.header-contact {
+  padding-right: 15px;
+}
+.header-contact > a {
+  font-size: 22px;
+}
+.header-contact > a:first-child::before {
+  content: "Szybki kontakt: ";
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* header social */
+.header-social {
+  padding: 0 15px;
+}
+.header-social a {
+  font-size: 30px;
+  margin: 0 5px;
+}
+
+.header-social {
+  position: relative;
+}
+
+.header-social::after,
+.header-social::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.header-social::after {
+  right: 0;
+}
+.header-social::before {
+  left: 0;
+}
+
+/* header lang */
+.header-lang {
+  padding-left: 15px;
+}
+.header-lang a {
+  font-size: 18px;
+}
