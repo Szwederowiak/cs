@@ -31,6 +31,10 @@
   transform: translateX(-20%) translateY(calc(50% + 6px));
 }
 
+#slider img {
+  max-width: 100%
+}
+
 /* ==== ==== SECTIONS ==== ==== */
 .sections {
   padding: 50px 0;
